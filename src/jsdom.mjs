@@ -151,9 +151,9 @@ export function installMenuDomEnvironment(window) {
   })
 }
 
-/** Read the shared checkbox state from native or ARIA checkbox semantics. */
+/** Read checked state from a native or ARIA checkbox or radio. */
 export function isChecked(control) {
-  return control.matches('input[type="checkbox"]')
+  return control.matches('input[type="checkbox"], input[type="radio"]')
     ? control.checked
     : control.getAttribute('aria-checked') === 'true'
 }

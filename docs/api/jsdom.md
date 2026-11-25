@@ -11,7 +11,7 @@ and close it during cleanup. The helpers apply changes to the supplied window.
   visibility and hit-test fallbacks for menu focus tests.
 - `installDisabledButtonBlur(window)` opts a test into blurring focused
   buttons when they become disabled.
-- `isChecked(control)` reads the checked state of a native or ARIA checkbox.
+- `isChecked(control)` reads the checked state of a native or ARIA checkbox or radio.
 
 `withBuiltDomFixture(build, entry, inspect)` bundles the fixture named by a
 file URL using the caller's [fixture build function](fixture-build.md) and
