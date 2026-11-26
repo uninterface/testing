@@ -78,7 +78,6 @@ try {
       private: true,
       type: 'module',
       dependencies: {
-        '@uninterface/backend': 'npm:@uninterface/backend-plain@0.1.0',
         '@uninterface/uninterface':
           source.devDependencies['@uninterface/uninterface'],
         vue: source.devDependencies.vue,
@@ -94,7 +93,16 @@ try {
       },
     }),
   )
-  npm(['install', '--ignore-scripts', '--no-audit', '--no-fund'], directory)
+  npm(
+    [
+      'install',
+      '--strict-peer-deps',
+      '--ignore-scripts',
+      '--no-audit',
+      '--no-fund',
+    ],
+    directory,
+  )
   execFileSync(process.execPath, ['check.mjs'], {
     cwd: directory,
     stdio: 'inherit',
