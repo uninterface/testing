@@ -78,8 +78,9 @@ try {
       private: true,
       type: 'module',
       dependencies: {
-        '@uninterface/backend': 'npm:@uninterface/backend-plain@0.0.2',
-        '@uninterface/uninterface': '0.0.2',
+        '@uninterface/backend': 'npm:@uninterface/backend-plain@0.1.0',
+        '@uninterface/uninterface':
+          source.devDependencies['@uninterface/uninterface'],
         vue: source.devDependencies.vue,
       },
       devDependencies: {
