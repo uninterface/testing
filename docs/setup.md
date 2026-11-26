@@ -3,12 +3,13 @@
 [Package README](../README.md) · [API reference](api/README.md) ·
 [Backend mapping contract](adapter-contract.md)
 
-Add `@uninterface/testing` as a development dependency (`devDependencies`) in
-your application or backend test project. Use its imports in test code and test
-configuration. Install the dependencies required by your chosen entry point.
-For Playwright, install `@playwright/test`. The npm package provides ESM and
-TypeScript declarations for the test runner. Follow your Core and backend setup
-guides for their requirements.
+Use Node.js 24 or 26. Add `@uninterface/testing` as a development dependency
+(`devDependencies`) in your application or backend test project. Use its imports
+in test code and test configuration. Install the dependencies required by your
+chosen entry point. For Vue fixtures, use a version in the `^3.5.18` peer range.
+For Playwright, install `@playwright/test` in the `^1.56.0` peer range. The npm
+package provides ESM and TypeScript declarations for the test runner. Follow
+your Core and backend setup guides for their requirements.
 
 ## Configure Playwright
 

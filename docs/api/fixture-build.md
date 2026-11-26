@@ -1,8 +1,10 @@
 # Fixture builds
 
 `@uninterface/testing/fixture-build` assembles Vue/Vite fixtures for an
-explicitly supplied backend. Install Vite, the Vue Vite plugin and
-`@uninterface/uninterface` in the environment running the build.
+explicitly supplied backend. Install Vite `^7.3.7 || ~8.1.6 || ~8.2.4 || ^8.3.3`,
+`@vitejs/plugin-vue` `^6.0.0`, and `@uninterface/uninterface` in the environment
+running the build. Use a Vue plugin release with a Vite peer that includes your
+Vite version. The `6.0.10` plugin supports Vite 7 and 8.
 
 `fixtureBuildConfig(backend)` returns an inline Vite config with Vue, the core
 icon loader, and resolution of `@uninterface/backend` to the supplied backend.
