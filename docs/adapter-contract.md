@@ -166,4 +166,4 @@ A compatible orchestrator loads the selected backend’s `testing.browser` files
 
 Declaring files does not configure Playwright, start a server or supply DOM/build utilities. The runner must supply those prerequisites and document its commands, discovery and report locations. Backend authors may also provide their own configuration and native-reference checks without changing this mapping contract.
 
-The supplied backend suites currently depend on external development build/DOM utilities and shared fixtures. They are backend-owned but not self-contained package tests; extraction requires those support utilities or equivalent configuration. Consumer tests using this harness are independent of those suites.
+For native backend tests, follow the selected backend’s testing guide from its source checkout. A backend can ship its own test scripts, fixture sources and runner configuration with declared development dependencies. Its npm package may expose compiled adapters for consumer tests separately. Application tests install the adapter and configure their own runner and fixtures as described in [test setup](setup.md).
